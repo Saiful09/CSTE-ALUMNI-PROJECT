@@ -1,0 +1,25 @@
+@extends('admin.master')
+@section('content')
+<table class="table table-responsive">
+	<tr>
+		<th>id</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Batch</th>
+		<th>Gender</th>
+		<th>Phone</th>
+		<th>Description</th>
+		<th>Action</th>
+	</tr>
+	<tr>
+		<td>{{$single->id}}</td>
+		<td>{{$single->name}}</td>
+		<td>{{$single->email}}</td>
+		<td>{{$single->batch}}</td>
+		<td>{{$single->gender}}</td>
+		<td>{{$single->phone}}</td>
+		<td>{{$single->description}}</td>
+		<td>
+	</tr>
+</table>
+@endsection('content')
